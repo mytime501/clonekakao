@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/clonekakao/static/css/main.c97c2422.css",
-    "main.js": "/clonekakao/static/js/main.ada05829.js",
+    "main.js": "/clonekakao/static/js/main.8a87816b.js",
     "static/js/453.8cc3b6f0.chunk.js": "/clonekakao/static/js/453.8cc3b6f0.chunk.js",
     "static/media/slick.svg": "/clonekakao/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/clonekakao/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,11 +9,11 @@
     "static/media/slick.woff": "/clonekakao/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/clonekakao/index.html",
     "main.c97c2422.css.map": "/clonekakao/static/css/main.c97c2422.css.map",
-    "main.ada05829.js.map": "/clonekakao/static/js/main.ada05829.js.map",
+    "main.8a87816b.js.map": "/clonekakao/static/js/main.8a87816b.js.map",
     "453.8cc3b6f0.chunk.js.map": "/clonekakao/static/js/453.8cc3b6f0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c97c2422.css",
-    "static/js/main.ada05829.js"
+    "static/js/main.8a87816b.js"
   ]
 }
