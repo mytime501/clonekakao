@@ -1,0 +1,49 @@
+name: Deploy to S3
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          force_orphan: true
+
+      - name: Set correct remote URL
+        run: |
+          git remote set-url origin https://github.com/mytime501/clonecode
+          git fetch --all
+
+      - name: Commit changes (if needed)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add package-lock.json || true
+          git commit -m "Auto-commit: Update package-lock.json" || true
+
+      - name: Force Push Develop to Main
+        run: |
+          git checkout develop
+          git push origin develop:main --force
