@@ -40,10 +40,10 @@ function RoutesWithTransition() {
         {/* 애니메이션을 적용할 영역: Routes */}
         <Routes location={location}>
           <Route path="/signin" element={<Signin />} />
-          <Route path="/auth" element={<Auth />} />
+          <Route path="/" element={<Auth />} />
 
           <Route
-            path="/"
+            path="/home"
             element={
               <PrivateRoute>
                 <Home />

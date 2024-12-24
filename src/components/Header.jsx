@@ -64,7 +64,7 @@ const Header = () => {
 
         {/* 메뉴 항목 */}
         <nav className="nav-menu">
-          <Link to="/" className="nav-item">
+          <Link to="/home" className="nav-item">
             홈
           </Link>
           <Link to="/popular" className="nav-item">
