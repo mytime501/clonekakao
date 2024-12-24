@@ -57,7 +57,7 @@ const Header = () => {
         <div className="logo">
           <i 
             className="fas fa-video logo-icon" 
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/home")}
             aria-label="logo"
           ></i>
         </div>
