@@ -12,7 +12,7 @@ const Signin = () => {
   // 카카오 로그인 처리
   const handleKakaoLogin = () => {
     try {
-      const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=${process.env.REACT_APP_KAKAO_API_KEY}&redirect_uri=${process.env.REACT_APP_KAKAO_REDIRECT_URI}`;
+      const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=${process.env.REACT_APP_KAKAO_API_KEY}&redirect_uri=http://mytime501.github.io/clonekakao/auth`;
 
       console.log(process.env.REACT_APP_KAKAO_API_KEY);
       console.log(process.env.REACT_APP_KAKAO_REDIRECT_URI);
